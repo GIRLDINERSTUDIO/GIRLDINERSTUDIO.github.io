@@ -145,3 +145,8 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+.puzzle-content a {
+    text-decoration: underline;
+    color: red;
+}
