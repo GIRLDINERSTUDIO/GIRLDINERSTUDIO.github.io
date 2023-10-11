@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+body {
+    font-family: 'Arvo';
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    background-color: rgb(33, 33, 33);
+    color: white;
+    width: fit-content;
+    border-left: 25px solid black;
+    margin: auto;
+    padding: 20px;
+    margin-block: 25px
+}
+
+.puzzle-title {
+    font-size: 35px;
+}
+
+#sheet-music {
+    width: 750px;
+    height: 350px;
+    border: 2px solid black;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    user-select: none;  
+}
+
+.bars {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%; 
+    top: 45%;
+    font-size:200px;
+}
+
+.clef {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 10%;
+    top: 38%;
+    font-size: 200px;
+}
+
+.note {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    top: 34%;
+}
+
+#note-title {
+    margin-top:10px;
+    font-size: 25px;
+}
+
+.note:hover {
+    color: red;
+    cursor:pointer;
+}
+
+.clef:hover {
+    color:red;
+    cursor:pointer;
+}
+
+.one {left: 28%;}
+.two {left: 37%;}
+.three {left: 46%;}
+.four {left: 55%;}
+.five {left: 64%}
+.six {left: 73%}
+.seven {left: 83%}
+
+#puzzle-list {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 25px;
+}
+
+#puzzle-list a:hover {
+    color: red;
+    text-decoration:underline;  
+}
+.back-to-main {
+    font-size:15px;
+    font-style:italic;
+}
+
+.puzzle-content {
+    width: 75%;
+    background-color: lightgoldenrodyellow;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.erasers {
+    text-align: left;
+}
+
+.erasers img {
+    text-align: center;
+    width: 450px;
+}
+
+code {
+    text-align:left;
+    font-size:20px;
+    width: 750px;
+    padding-block:50px;
+    margin: auto;
+}
+
+td {
+    width: 250px;
+    aspect-ratio: 1;
+    background-repeat: none;
+    height:250px;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

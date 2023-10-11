@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Studio</title>
+</head>
+<body>
+    <h1>𝇚 The Studio 𝇜</h1>
+    <div id="sheet-music">
+        <div class="bars">𝄙𝄙𝄙𝄙𝄙𝄙</div>
+        <a class="clef">𝄞</a>
+        <a href='svli.html' class="note one">♩</a>
+        <a class="note two">♩</a>
+        <a class="note three">♩</a>
+        <a class="note four">♩</a>
+        <a class="note five">♩</a>
+        <a class="note six">♩</a>
+        <a class="note seven">♩</a>
+        <div id="note-title"></div>
+    </div>
+
+    <div id="puzzle-list">
+        <a href='svli.html'>♩ The Mathematic is Correct at Any Given Tine ♩</a><br>
+        <a href='erasers.html'>♩ Erasers ♩</a><br>
+        <a href='firstyouvisit.html'>♩ Hey Look It's Me On That Screen ♩</a><br>
+        <a href='incomprehensible.html'>♩ 𒀰 INCOMPREHENSIBLE STRING OF CHARACTERS ♩</a><br>
+        <a href=''>5</a><br>
+        <a href=''>6</a><br>
+        <a href=''>7</a><br>
+    </div>
+</body>
+<script>
+    const puzzleList = document.getElementById('puzzle-list').querySelectorAll('a');
+    const sheetMusic = document.getElementById('sheet-music');
+    const noteTitle = document.getElementById('note-title');
+
+    const noteDivs = sheetMusic.querySelectorAll('.note');
+
+    noteDivs.forEach((noteDiv, index) => {
+    console.log(noteDiv, index);
+    console.log(puzzleList[index]);
+    noteDiv.addEventListener('mouseover', () => {
+        noteTitle.textContent = puzzleList[index].innerHTML;
+    });
+
+    noteDiv.addEventListener('mouseout', () => {
+        noteTitle.textContent = '';
+    });
+    });
+</script>
+</html>
